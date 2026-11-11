@@ -1,5 +1,5 @@
-# Hydrocarbon type colours, from the NPD Geostandard (chapter 6.12, p. 6-27; docs/geostandard.md, knowledge/geostandard.yaml gs22-hydrocarbon-colours).
-# Adam decided on 2026-11-04 that these replace the EDS orange for gas and the inconsistent condensate colours (blue in the network maps, red elsewhere).
+# Hydrocarbon type colours, from the NPD Geostandard (chapter 6.12, p. 6-27).
+# Decision of 2026-11-04: these replace the EDS orange for gas and the inconsistent condensate colours (blue in the network maps, red elsewhere).
 # `fill` is the Geostandard value (areas, bars, pies, markers); `line` is a darkened shade of the same hue with at least 3:1 contrast on white for lines and text (pale pink / bright green do not
 # read as a line on a white canvas); the EDS light theme still governs axes, text and the canvas.
 colours:

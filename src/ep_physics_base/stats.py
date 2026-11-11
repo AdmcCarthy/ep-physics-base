@@ -1,4 +1,4 @@
-"""Statistics shared by the hypothesis tests of the knowledge store and by analyses that need the same decision language (pure): a cluster bootstrap over wellbores (tests in one well are not independent), the wells needed for a given precision, the scientific verdict of an interval against thresholds, and the decision status of a departure against a tolerance.  Moved out of `src/knowledge/verify.py` so that analysis code can use it without importing the knowledge store (docs/architecture_boundaries.md)."""
+"""Statistics shared by the hypothesis tests of a host and by analyses that need the same decision language (pure): a cluster bootstrap over wellbores (tests in one well are not independent), the wells needed for a given precision, the scientific verdict of an interval against thresholds, and the decision status of a departure against a tolerance."""
 from __future__ import annotations
 
 from typing import Callable

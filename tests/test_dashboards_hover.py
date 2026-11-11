@@ -1,4 +1,4 @@
-"""Dashboard tooltips: two lines next to the point, details in a fixed panel on the far side (src/utils/hover_panel.py)."""
+"""Dashboard tooltips: two lines next to the point, details in a fixed panel on the far side."""
 from __future__ import annotations
 
 import re

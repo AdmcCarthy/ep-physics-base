@@ -26,7 +26,7 @@ TEXT_ON_EMPHASIS = "#FFFFFF"  # Step 15 on Step 9/10 emphasis fills
 
 # Stream colours (fluid conventions from the design guide)
 STREAM_COLOURS = {
-    "oil": hc_colour("oil"),                 # hydrocarbon type colours: NPD Geostandard 6.12 (config/hc_colours.yaml, Adam 2026-11-04)
+    "oil": hc_colour("oil"),                 # hydrocarbon type colours: NPD Geostandard 6.12 (defaults/hc_colours.yaml)
     "gas": hc_colour("gas"),
     "oe": NORTH_SEA,
     "water": BLUE,

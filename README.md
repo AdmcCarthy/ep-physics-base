@@ -26,7 +26,7 @@ Depends on: none. Optional extras:
 | `figures.theme` | Equinor Design System (EDS) light-theme constants. |
 | `figures.figure_style` | Figure style after Stephen Few, *Show Me the Numbers*: legible text, little non-data ink, labels on the data instead of legends where possible, and th |
 | `figures.axis_tags` | Add a bracket after the unit of an axis, colour bar or sheet header that says how the quantity was obtained in this project: measured, derived, modell |
-| `figures.hc_colours` | Hydrocarbon type colours from the NPD Geostandard (config/hc_colours.yaml, docs/geostandard.md). |
+| `figures.hc_colours` | Hydrocarbon type colours from the NPD Geostandard (defaults/hc_colours.yaml). |
 | `figures.hover_panel` | Tooltips that do not hide the data (Plotly dashboards). |
 | `names` | Name keys: a name reduced for matching (pure string functions shared by the domain libraries). |
 

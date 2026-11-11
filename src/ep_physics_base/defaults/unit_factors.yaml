@@ -1,4 +1,4 @@
-# Unit conversion factors -- configuration, not code (AGENTS.md rule 3C.5).
+# Unit conversion factors -- configuration, not code.
 # Referenced by name from code and from source adapters.
 
 constants:
@@ -9,9 +9,9 @@ constants:
   ngl_sm3_oe_per_tonne: 1.9      # 1 tonne NGL = 1.9 Sm3 o.e. (verified against NPD field_reserves OE totals)
   bbl_per_sm3: 6.2898            # barrels per standard cubic metre of oil / o.e.
   scf_per_sm3: 35.3147           # standard cubic feet per Sm3 gas
-  psi_per_bar: 14.5038           # PVT correlations (Standing) are written in psia, degF and scf/stb; the pipeline converts at the edges (src/processing/pvt.py)
+  psi_per_bar: 14.5038           # PVT correlations (Standing) are written in psia, degF and scf/stb; a host converts at the edges
 
-# A force logged as 'TON' (mud-log weight on bit and hookload) does not say WHICH ton: metric tonne-force, US short ton-force or imperial long ton-force (Adam, 2026-11-10;
+# A force logged as 'TON' (mud-log weight on bit and hookload) does not say WHICH ton: metric tonne-force, US short ton-force or imperial long ton-force (decision of 2026-11-10;
 # an earlier statement that it is a metric tonne was an error).  The kind is unresolved: the native value is kept and a band over the three kinds is the most that can be said.
 # kN per unit = mass in kg x 9.80665 m/s2 / 1000 (1000 kg, 907.18474 kg, 1016.0469088 kg).
 force_ton_candidates:
@@ -25,7 +25,7 @@ length_to_metres:
   ft: 0.3048
 
 # Units that occur in free text (well histories) -> canonical metric unit.  value_out = value * scale + offset.
-# Keys are normalised: lower case, no spaces, '³' written as '3'.  Used by src/processing/well_history.py (rules: config/well_history_rules.yaml).
+# Keys are normalised: lower case, no spaces, '³' written as '3'.  Used to read quantities from free text.
 # Text rates are read as standard conditions (Sm3) when the text says m3: a text 'm3/day' of oil or gas is almost always Sm3 in Sodir histories.
 text_units:
   rate_liquid:                      # -> Sm3/d

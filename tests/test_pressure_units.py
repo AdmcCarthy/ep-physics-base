@@ -1,4 +1,4 @@
-"""Pressure, specific gravity, overpressure and the datum; fluid-class colours; the three-view pressure-depth figure (docs/pore_pressure.md)."""
+"""Pressure, specific gravity, overpressure and the datum; fluid-class colours; the three-view pressure-depth figure."""
 from __future__ import annotations
 
 

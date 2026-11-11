@@ -1,4 +1,4 @@
-"""Hydrocarbon type colours from the NPD Geostandard (config/hc_colours.yaml, docs/geostandard.md).
+"""Hydrocarbon type colours from the NPD Geostandard (defaults/hc_colours.yaml).
 
     hc_colour("gas")               # "#FF0000": fill for areas, bars, pies and markers
     hc_line_colour("condensate")   # a darker shade of the same hue with >= 3:1 contrast on white: for lines and text
