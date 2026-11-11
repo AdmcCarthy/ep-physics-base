@@ -1,6 +1,6 @@
 [project]
 name = "ep-physics-base"
-version = "0.1.0"
+version = "1.0.0"
 description = "Units, the `(result, events)` event helper, configuration with packaged defaults, the bootstrap and decision statistics, the tag vocabulary, name keys, and the "
 readme = "README.md"
 license = { file = "LICENSE" }
