@@ -9,17 +9,16 @@ Never hard-code an oil, gas or condensate colour: use this module (the theme's S
 from __future__ import annotations
 
 from functools import lru_cache
-from pathlib import Path
 from typing import Any
 
-import yaml
+from ep_physics_base.config import load_yaml
 
-CONFIG_FILE = Path(__file__).resolve().parents[2] / "config" / "hc_colours.yaml"
+CONFIG_FILE = "config/hc_colours.yaml"                # read through load_yaml: the project's file, else the packaged default of a library
 
 
 @lru_cache(maxsize=1)
 def load_hc_colours() -> dict[str, Any]:
-    return yaml.safe_load(CONFIG_FILE.read_text(encoding="utf-8"))
+    return load_yaml(CONFIG_FILE)
 
 
 def _key(name: str) -> str:

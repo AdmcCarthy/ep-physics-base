@@ -40,7 +40,7 @@ Every setting has a packaged default in `src/ep_physics_base/defaults/`. A proje
 
 ```
 uv sync --all-extras
-uv run pytest            # 2 test files
+uv run pytest            # 3 test files
 uv run ruff check .
 uv run python scripts/publication_gate.py
 ```
