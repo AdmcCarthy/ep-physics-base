@@ -1,0 +1,11 @@
+# How each axis, colour-bar and sheet-header quantity was obtained in THIS project, shown in a bracket after the unit: "Pressure [bar] (measured)".
+# measured = a value as reported in the source data; derived = calculated from data by a definition or unit conversion (shares, ratios, sums, ages from the chart);
+# modelled = the result of a model or an empirical relation (overburden, fracture limits, ECD, envelopes, economics); assumed = an assumption or placeholder.
+# Rules are tried in order, the first match wins; a label with a unit bracket and no match is 'derived'.  A label that already ends its unit with one of the four words is left alone.
+# Patterns are case-insensitive regular expressions on the label text before the tag is added.
+rules:
+  - {tag: assumed, pattern: "assumed|assumption|placeholder|illustrative"}
+  - {tag: modelled, pattern: "ECD|ESD|annular|friction|overburden|lithostatic|fracture|SHmin|envelope|model|decompact|back-?strip|leakage|drilling window|saturation|bubble|dew point|buoyancy|NPV|break-even|MEV|USD|NOK|capex per|price|cash"}
+  - {tag: derived, pattern: "minus|difference|ratio|share|overbalance|overpressure|margin|excess|change|per year|per km|gradient|equivalent density|hydrostatic|departure|against|relative|count|density of|wells per"}
+  - {tag: measured, pattern: "mud weight|water depth|elevation|leak-?off|integrity test|test pressure|reservoir pressure|formation pressure|pressure|temperature|BHT|TVD|MD\\b|depth|production|reserves|recoverable|volume|rate|flow|investment|diameter|thickness|length|speed|duration|capacity|design life|interest|density"}
+  - {tag: derived, pattern: ".*"}

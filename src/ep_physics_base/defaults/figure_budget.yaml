@@ -1,0 +1,19 @@
+# Figure budget (scripts/figure_budget.py): the most legibility problems a notebook may have. Zero-budget kinds are not listed; ratchet kinds can only go down.
+22_pressure_depth_contacts:
+  clipped: 6
+  intrusions: 0
+  labels_over_data: 2
+  legend_over_data: 0
+  overlaps: 8
+24_pore_pressure_mud_weight:
+  clipped: 0
+  intrusions: 0
+  labels_over_data: 0
+  legend_over_data: 2
+  overlaps: 0
+27_well_design_cement_barriers:
+  clipped: 0
+  intrusions: 0
+  labels_over_data: 0
+  legend_over_data: 0
+  overlaps: 16

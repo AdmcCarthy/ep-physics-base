@@ -1,0 +1,42 @@
+# Hydrocarbon type colours, from the NPD Geostandard (chapter 6.12, p. 6-27; docs/geostandard.md, knowledge/geostandard.yaml gs22-hydrocarbon-colours).
+# Adam decided on 2026-11-04 that these replace the EDS orange for gas and the inconsistent condensate colours (blue in the network maps, red elsewhere).
+# `fill` is the Geostandard value (areas, bars, pies, markers); `line` is a darkened shade of the same hue with at least 3:1 contrast on white for lines and text (pale pink / bright green do not
+# read as a line on a white canvas); the EDS light theme still governs axes, text and the canvas.
+colours:
+  oil:            {fill: "#02DB00", note: "Geostandard 6.12 Oil (2 219 0)"}
+  gas:            {fill: "#FF0000", note: "Geostandard 6.12 Gas (255 0 0)"}
+  condensate:     {fill: "#FFBEE8", note: "Geostandard 6.12 Condensate (255 190 232)"}
+  hydrocarbons:   {fill: "#FFCB05", note: "Geostandard 6.12 Hydrocarbons, undifferentiated"}
+  unknown:        {fill: "#6083A8", note: "Geostandard 6.12 Unknown"}
+  gas hydrates:   {fill: "#B03F97", note: "Geostandard 6.12 Gas hydrates"}
+  co2:            {fill: "#CDBD66", note: "Geostandard 6.12.2 CO2"}
+# Combinations are two colours (the standard draws oil/gas and gas/condensate as two-colour symbols): left / right (or top / bottom) half.
+combinations:
+  oil/gas:        [oil, gas]
+  gas/condensate: [gas, condensate]
+# Shows (6.12.1), for well-result and show maps.
+shows:
+  proven oil zone: "#009900"
+  oil shows: "#00FF00"
+  oil traces: "#E6FFE6"
+  proven oil and gas zones: "#993300"
+  oil and gas shows: "#CC9900"
+  proven gas zone: "#FF0000"
+  gas shows: "#FF8080"
+  gas traces: "#FFE6E6"
+  no shows: "#CCCCCC"
+  petroleum proximity: "#B2ECFF"
+  contamination: "#FFFF00"
+  unsampled section: "#F8B68C"
+# Aliases: Sodir wording (wellbore content, field hc_type, pipeline medium, stream columns) -> a colour name above or a combination.
+aliases:
+  OIL: oil
+  GAS: gas
+  CONDENSATE: condensate
+  "OIL/GAS": oil/gas
+  "GAS/CONDENSATE": gas/condensate
+  "OIL/CONDENSATE": oil/gas
+  SHOWS: hydrocarbons
+  NGL: condensate
+  "CO2 INJECTION": co2
+  CO2: co2
