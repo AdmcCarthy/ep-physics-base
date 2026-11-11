@@ -2,7 +2,7 @@
 
 Units, the `(result, events)` event helper, configuration with packaged defaults, the bootstrap and decision statistics, the tag vocabulary, name keys, and the shared figure layer (the EDS light theme, the figure legibility rules, axis tags, the hydrocarbon colour standard).
 
-**Status: private, built public-ready.** The library follows the rules of a public one (no host-repository imports, no data, no private paths, an automated publication gate in `scripts/publication_gate.py`) and is published only when that gate passes. Licence: MIT with acknowledgement (`LICENSE`).
+**Status: public (2026-11-11).** The library follows the rules of a public one (no host-repository imports, no data, no private paths, an automated publication gate in `scripts/publication_gate.py`); the gate runs in CI and must stay at zero blockers. Licence: MIT with acknowledgement (`LICENSE`).
 
 ## Install
 
